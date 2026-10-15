@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		2AD83231307E447200BB1A15 /* voice-ai-coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "voice-ai-coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60718293A4B5C /* Config/App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/App.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD83233307E447200BB1A15 /* voice-ai-coach */,
+				A1B2C3D4E5F60718293A4B5C /* Config/App.xcconfig */,
 				2AD83232307E447200BB1A15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -243,6 +245,7 @@
 		};
 		2AD8323F307E447400BB1A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B2C3D4E5F60718293A4B5C /* Config/App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,6 +257,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_COACH_STREAM_URL = "$(COACH_STREAM_URL)";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Voice AI Coach uses the microphone so you can practice speaking.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Voice AI Coach uses speech recognition to transcribe your practice sessions.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -289,6 +293,7 @@
 		};
 		2AD83240307E447400BB1A15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B2C3D4E5F60718293A4B5C /* Config/App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +305,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_COACH_STREAM_URL = "$(COACH_STREAM_URL)";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Voice AI Coach uses the microphone so you can practice speaking.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Voice AI Coach uses speech recognition to transcribe your practice sessions.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
