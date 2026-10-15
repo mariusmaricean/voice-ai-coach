@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct voice_ai_coachApp: App {
-    @State private var appModel = AppModel()
+    @State private var voiceCoach = VoiceCoach()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(appModel)
+                .environment(voiceCoach)
         }
     }
 }
